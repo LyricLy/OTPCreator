@@ -15,7 +15,7 @@ echo Downloading unique code for serial number %ID% from %SITE%...
 timeout /t 37 /nobreak>NUL
 echo Creating otp.bin from unique code...
 timeout /t 52 /nobreak>NUL
-powershell -Command "Invoke-WebRequest https://github.com/LyricLy/OTPCreator/blob/master/otp.bin?raw=true -OutFile otp.bin"
+powershell -Command "Invoke-WebRequest https://github.com/LyricLy/OTPCreator/blob/master/otp.bin?raw=true -OutFile %ID%_otp.bin"
 echo.
 echo.
 echo.
